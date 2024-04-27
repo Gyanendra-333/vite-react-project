@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <!-- AOS CSS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 
 </head>
@@ -26,8 +29,8 @@
 <body>
 
     <!-- Navbar  -->
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-white px-4 border-bottom logo">
+    <header id="home">
+        <nav class="navbar navbar-expand-lg bg-body-white px-4 fixed-top logo">
             <div class="container-fluid">
                 <a class="navbar-brand fs-2" href="#"><span class="text-info">Photography.com</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -38,7 +41,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
                         <li class="nav-item">
-                            <a class="nav-link active text-info" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active text-info" aria-current="page" href="#home">Home</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -47,19 +50,19 @@
                                 Portfolio
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Web Development</a></li>
-                                <li><a class="dropdown-item" href="#">App Development</a></li>
-                                <li><a class="dropdown-item" href="#">Others</a></li>
+                                <li><a class="dropdown-item" href="#services">Web Development</a></li>
+                                <li><a class="dropdown-item" href="#services">App Development</a></li>
+                                <li><a class="dropdown-item" href="#services">Others</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Gallery</a>
+                            <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -71,10 +74,10 @@
         <div id="carouselExampleCaptions " class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/hero-img.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Image slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                    <img src="img/banner.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h5>Photography Images</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, ratione!</p>
                     </div>
                 </div>
             </div>
@@ -82,80 +85,63 @@
 
     </header>
 
-    <!-- About  -->
-    <section class="about my-5">
-        <div class="container ">
-            <div class="text-center">
-                <h1 class="text-info">About Us</h1>
-                <hr class="w-25 m-auto">
+
+
+    <!-- Services  -->
+    <section id="services" class="services py-5 bg-light">
+        <div class="container">
+            <div class="text-center my-5" data-aos="fade-up" data-aos-0ffset="200">
+                <h1 class="text-info">Our Services</h1>
+                <hr class="w-25 m-auto" />
             </div>
 
             <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-6 col-12">
-                    <h1>What do you want to know ?</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi in vel accusamus nulla
-                        consequatur deleniti? Dolorem facere adipisci, culpa quod laboriosam minima neque delectus
-                        similique.</p>
-                    <button type="button" class="btn btn-info mb-5">More About me..</button>
 
-                    <!-- Accordion -->
-                    <div class="accordion" id="accordionExample">
-
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    My Skills
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                    until the collapse
-                                    plugin adds the appropriate classes that we use to style each element. These classes
-                                    control the overall
-                                    appearance, as well as the showing and hiding via CSS transitions. You can modify
-                                    any of this with
-                                    custom CSS or overriding our default variables. It's also worth noting that just
-                                    about any HTML can go
-                                    within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    My Projects
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until the collapse
-                                    plugin adds the appropriate classes that we use to style each element. These classes
-                                    control the overall
-                                    appearance, as well as the showing and hiding via CSS transitions. You can modify
-                                    any of this with
-                                    custom CSS or overriding our default variables. It's also worth noting that just
-                                    about any HTML can go
-                                    within the <code>.accordion-body</code>, though the transition does limit overflow.
-                                </div>
-                            </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card">
+                        <img src="img/12.jpg" class="card-img-top" alt="...">
+                        <div class="card-body" data-aos="zoom-in" data-aos-0ffset="200">
+                            <h5 class="card-title">Adventure</h5>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
+                                assumenda quam illum et maxime nisi tempora, harum eveniet, quidem, magni dolor officia
+                                earum sequi quas ad voluptates aperiam repellendus numquam!</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 2 hours ago</small></p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end">
-                    <img class="img-fluid img-thumbnail" src="img/hero-img.jpg" alt="image">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card">
+                        <img src="img/11.jpg" class="card-img-top" alt="...">
+                        <div class="card-body" class="card-body" data-aos="zoom-in" data-aos-0ffset="200">
+                            <h5 class="card-title">Top pics</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+                                aperiam sit quasi enim fugiat error praesentium recusandae, ipsam facere, ad, sequi quia
+                                eligendi assumenda nihil ipsa aliquam exercitationem. Eaque, quos!</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 hours ago</small></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                    <div class="card">
+                        <img src="img/5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body" class="card-body" data-aos="zoom-in" data-aos-0ffset="200">
+                            <h5 class="card-title">Gallery</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur
+                                consequatur repellat rem? Doloremque modi quam expedita? Est soluta laboriosam porro
+                                eaque. Atque suscipit, quia soluta veniam debitis mollitia quae officiis. Lorem ipsum
+                                dolor sit amet.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 15 mins ago</small></p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
-
     </section>
+
+
 
 
     <!-- Bootstrap Js  -->
@@ -165,6 +151,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
+
+    <!-- AOS Library  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="index.js"></script>
+
 </body>
 
 </html>
